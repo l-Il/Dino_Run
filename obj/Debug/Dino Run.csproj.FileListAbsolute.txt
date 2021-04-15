@@ -1,0 +1,10 @@
+C:\Users\ASUS\RiderProjects\Dino Run\bin\Debug\Dino_Run.exe.config
+C:\Users\ASUS\RiderProjects\Dino Run\bin\Debug\Dino_Run.exe
+C:\Users\ASUS\RiderProjects\Dino Run\bin\Debug\Dino_Run.pdb
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino Run.csprojAssemblyReference.cache
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino_Run.Properties.Resources.resources
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino Run.csproj.GenerateResource.cache
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino Run.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino_Run.exe
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino_Run.pdb
+C:\Users\ASUS\RiderProjects\Dino Run\obj\Debug\Dino_Run.Form1.resources
