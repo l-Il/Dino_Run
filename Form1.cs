@@ -53,13 +53,13 @@ namespace Dino_Run
         dino_y += 1;
       dinosaur.Location = new Point(10, dino_y);
 
+      // Проверка столкновения
       if (cacti_x < 60 && dino_y + 50 > 190)
       {
-        lose_label.Text += "\n Ваши очки: " + Convert.ToString(scores) + ".";
+        lose_label.Text += "\n" + "Ваши очки: " + Convert.ToString(scores) + ".";
         lose_label.Visible = true;
         timer1.Enabled = false;
       }
-      
     }
 
     Keys key;

@@ -29,6 +29,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.dinosaur = new System.Windows.Forms.Label();
             this.cactus = new System.Windows.Forms.Label();
             this.ground = new System.Windows.Forms.Label();
@@ -41,6 +42,7 @@
             // dinosaur
             // 
             this.dinosaur.BackColor = System.Drawing.Color.LightSlateGray;
+            this.dinosaur.Image = ((System.Drawing.Image) (resources.GetObject("dinosaur.Image")));
             this.dinosaur.Location = new System.Drawing.Point(10, 170);
             this.dinosaur.Name = "dinosaur";
             this.dinosaur.Size = new System.Drawing.Size(50, 50);
@@ -50,6 +52,7 @@
             // cactus
             // 
             this.cactus.BackColor = System.Drawing.Color.ForestGreen;
+            this.cactus.Image = ((System.Drawing.Image) (resources.GetObject("cactus.Image")));
             this.cactus.Location = new System.Drawing.Point(590, 190);
             this.cactus.Name = "cactus";
             this.cactus.Size = new System.Drawing.Size(20, 30);
@@ -59,6 +62,7 @@
             // ground
             // 
             this.ground.BackColor = System.Drawing.Color.SaddleBrown;
+            this.ground.Image = ((System.Drawing.Image) (resources.GetObject("ground.Image")));
             this.ground.Location = new System.Drawing.Point(10, 220);
             this.ground.Name = "ground";
             this.ground.Size = new System.Drawing.Size(600, 30);
@@ -81,7 +85,7 @@
             // 
             this.lose_label.Location = new System.Drawing.Point(10, 10);
             this.lose_label.Name = "lose_label";
-            this.lose_label.Size = new System.Drawing.Size(600, 240);
+            this.lose_label.Size = new System.Drawing.Size(600, 100);
             this.lose_label.TabIndex = 4;
             this.lose_label.Text = "Вы проиграли!";
             this.lose_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -91,7 +95,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(624, 261);
+            this.ClientSize = new System.Drawing.Size(624, 262);
             this.Controls.Add(this.lose_label);
             this.Controls.Add(this.scores_label);
             this.Controls.Add(this.ground);
@@ -99,6 +103,7 @@
             this.Controls.Add(this.dinosaur);
             this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Form1";
+            this.Text = "Dino Run";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
             this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyUp);
