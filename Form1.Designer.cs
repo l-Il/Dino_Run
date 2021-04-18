@@ -36,6 +36,7 @@
             this.timer1 = new System.Timers.Timer();
             this.scores_label = new System.Windows.Forms.Label();
             this.lose_label = new System.Windows.Forms.Label();
+            this.lose_button = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize) (this.timer1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,12 +84,27 @@
             // 
             // lose_label
             // 
+            this.lose_label.ForeColor = System.Drawing.Color.Black;
             this.lose_label.Location = new System.Drawing.Point(10, 10);
             this.lose_label.Name = "lose_label";
-            this.lose_label.Size = new System.Drawing.Size(600, 100);
+            this.lose_label.Size = new System.Drawing.Size(600, 240);
             this.lose_label.TabIndex = 4;
             this.lose_label.Text = "Вы проиграли!";
             this.lose_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lose_button
+            // 
+            this.lose_button.CausesValidation = false;
+            this.lose_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lose_button.ForeColor = System.Drawing.Color.Black;
+            this.lose_button.Location = new System.Drawing.Point(10, 220);
+            this.lose_button.Name = "lose_button";
+            this.lose_button.Size = new System.Drawing.Size(600, 30);
+            this.lose_button.TabIndex = 5;
+            this.lose_button.TabStop = false;
+            this.lose_button.Text = "Повторить";
+            this.lose_button.UseVisualStyleBackColor = true;
+            this.lose_button.Click += new System.EventHandler(this.lose_button_Click);
             // 
             // Form1
             // 
@@ -96,6 +112,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(624, 262);
+            this.Controls.Add(this.lose_button);
             this.Controls.Add(this.lose_label);
             this.Controls.Add(this.scores_label);
             this.Controls.Add(this.ground);
@@ -110,6 +127,8 @@
             ((System.ComponentModel.ISupportInitialize) (this.timer1)).EndInit();
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button lose_button;
 
         private System.Windows.Forms.Label lose_label;
 
